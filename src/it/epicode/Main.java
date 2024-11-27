@@ -92,7 +92,7 @@ public class Main {
         // ottengo lista di prodotti ordinati da clienti con tier == 2
         Set<Product> orderedProducts = OrderedProductByTier.getOrderedProductsByTier(orders);
 
-        System.out.println("Products list for tier 2:");
+        System.out.println("Products list for tier 2 ordered between 01-feb-2021 and 01-04-2021:");
         orderedProducts.forEach(product -> System.out.println("Product:" + product.getName()));
 
     }

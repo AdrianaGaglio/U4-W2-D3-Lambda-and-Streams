@@ -32,9 +32,7 @@ public class GetProducts {
         // Converte la lista di prodotti in uno stream
         return products.stream()
                 // Filtra i prodotti che appartengono alla categoria "Books"
-                .filter(product -> product.getCategory().equals("Books"))
-                // Filtra ulteriormente i prodotti con prezzo maggiore di 100
-                .filter(product -> product.getPrice() > 100)
+                .filter(product -> product.getCategory().equals("Books") && product.getPrice() > 100)
                 // Converte di nuovo lo stream filtrato in una lista
                 .toList();
     }
